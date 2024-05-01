@@ -59,4 +59,14 @@
         padding: 2rem 1rem;
     }  
  } 
+ /*-------------------Media Queries(Small Devices)-----------------*/
+ @media screen and (max-width:340px) {
+    .experience_container{
+        gap: 1rem;
+    }
+    .experience_container > div{
+        width: 90%;
+        padding: 2rem 0rem;
+    }  
+ } 
 

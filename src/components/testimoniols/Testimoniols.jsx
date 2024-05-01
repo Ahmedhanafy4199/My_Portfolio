@@ -20,25 +20,25 @@ const data=[
     id:1,
     avatar:AVTR1,
     name:'tina snow',
-    review:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, sapiente veritatis animi accusamus odit modi adipisci repudiandae fuga asperiores eveniet, cum at nam aliquam placeat. Odio voluptatum fugiat quod ullam.'
+    review:'Working with the team at FrontEndTeam was an absolute pleasure. They not only delivered a stunning website but also ensured that it was fully responsive and user-friendly. Our online presence has never looked better!'
   },
   {
     id:2,
     avatar:AVTR2,
     name:'shatte wale',
-    review:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, sapiente veritatis animi accusamus odit modi adipisci repudiandae fuga asperiores eveniet, cum at nam aliquam placeat. Odio voluptatum fugiat quod ullam.'
+    review:'I was impressed by the level of attention to detail and creativity shown by the FrontEndTeam team. They listened to our needs and transformed our vision into a visually captivating website that exceeded our expectations.'
   },
   {
     id:3,
     avatar:AVTR3,
     name:'kwame despite',
-    review:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, sapiente veritatis animi accusamus odit modi adipisci repudiandae fuga asperiores eveniet, cum at nam aliquam placeat. Odio voluptatum fugiat quod ullam.'
+    review:'As a non-profit organization, we needed a website that effectively conveyed our mission and engaged our audience. FrontEndTeam understood our unique requirements and delivered a website that has significantly boosted our online presence.'
   },
   {
     id:4,
     avatar:AVTR4,
     name:'nana mcBrown',
-    review:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, sapiente veritatis animi accusamus odit modi adipisci repudiandae fuga asperiores eveniet, cum at nam aliquam placeat. Odio voluptatum fugiat quod ullam.'
+    review:'The team at FrontEndTeam went above and beyond to ensure that our website not only looked great but also performed flawlessly across all devices. Their dedication to delivering top-notch results is unmatched.'
   },
 ]
 

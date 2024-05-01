@@ -34,7 +34,7 @@ const About = () => {
               </article>
             </div>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta ut quasi accusamus quod ea veniam fugit quibusdam, eveniet incidunt, voluptates nemo eaque distinctio quis! Mollitia cumque nobis magnam excepturi? Veritatis.
+            Certainly! As a front-end developer, I specialize in crafting the user interface and experience of websites and applications. I strive to ensure that the front end of a digital product is intuitive, responsive, and engaging. With expertise in HTML, CSS,  JavaScript , and React I bring concepts to life, bridging the gap between design and functionality to deliver seamless user experiences. Let's build something amazing together! 
             </p>
             <a href='#contact' className='btn btn-primary'>Let's Talk</a>
         </div>
