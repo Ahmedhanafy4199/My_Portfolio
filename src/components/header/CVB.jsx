@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../assets/Ahmed_Hanafy_FrontEnd.pdf'
+import CV from '../../assets/Ahmed_Hanafy_Mid_Level_FrontEnd_Developer.pdf'
 
 const CVB = () => {
   return (

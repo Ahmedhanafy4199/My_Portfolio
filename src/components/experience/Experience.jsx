@@ -36,7 +36,7 @@ const Experience = () => {
               <article className='experience_details'>
                 <BsPatchCheckFill className='experience_details-icon'/>
                 <div>
-                  <h4>JQuery</h4>
+                  <h4>Shadcn</h4>
                   <small className='text-light'>Experienced</small>
                 </div>
               </article>
@@ -65,6 +65,13 @@ const Experience = () => {
                 <BsPatchCheckFill className='experience_details-icon'/>
                 <div>
                   <h4>Redux</h4>
+                  <small className='text-light'>Experienced</small>
+                </div>
+              </article>
+              <article className='experience_details'>
+                <BsPatchCheckFill className='experience_details-icon'/>
+                <div>
+                  <h4>Vue</h4>
                   <small className='text-light'>Experienced</small>
                 </div>
               </article>
@@ -118,8 +125,22 @@ const Experience = () => {
               <article className='experience_details'>
                 <BsPatchCheckFill className='experience_details-icon'/>
                 <div>
+                  <h4>JQuery</h4>
+                  <small className='text-light'>Experienced</small>
+                </div>
+              </article>
+              <article className='experience_details'>
+                <BsPatchCheckFill className='experience_details-icon'/>
+                <div>
                   <h4>MySQL</h4>
                   <small className='text-light'>Experienced</small>
+                </div>
+              </article>
+              <article className='experience_details'>
+                <BsPatchCheckFill className='experience_details-icon'/>
+                <div>
+                  <h4>PHPWord</h4>
+                  <small className='text-light'>Intermediate</small>
                 </div>
               </article>
           </div>
