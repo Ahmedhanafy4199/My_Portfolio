@@ -1,15 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
-import './nav.css'
+import React, { useState, useEffect, useRef } from 'react'
 import { AiOutlineHome } from 'react-icons/ai'
 import { AiOutlineUser } from 'react-icons/ai'
 import { BiBook } from 'react-icons/bi'
 import { RiServiceLine } from 'react-icons/ri'
 import { BiMessageSquareDetail } from 'react-icons/bi'
 import { VscFolderLibrary } from 'react-icons/vsc'
-import { MdOutlineRateReview } from 'react-icons/md'
+import { MdOutlineEmojiEvents } from 'react-icons/md'
 import { BsChevronDoubleDown } from 'react-icons/bs'
-import { useState, useEffect, useRef } from 'react'
 
 const Nav = () => {
   const [activeNav, setActiceNav] = useState('#')
@@ -39,12 +37,10 @@ const Nav = () => {
       observer.observe(section)
     })
 
-    // Check if we're at the top of the page on mount
     if (window.scrollY < 100) {
       setActiceNav('#')
     }
 
-    // Handle scroll to detect when at the top
     const handleScroll = () => {
       if (window.scrollY < 100 && !isNavigating.current) {
         setActiceNav('#')
@@ -65,22 +61,27 @@ const Nav = () => {
     setActiceNav(section)
     isNavigating.current = true
 
-    // Re-enable observer after smooth scroll completes (approximately 1 second)
     setTimeout(() => {
       isNavigating.current = false
     }, 1000)
   }
 
+  const navLinkClass = (section) => {
+    const baseClass = "bg-transparent p-2.5 xs:p-3 rounded-full flex items-center justify-center text-light text-[0.9rem] xs:text-[1.05rem] transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] relative hover:text-white hover:-translate-y-[2px]"
+    const activeClass = "bg-gradient-primary text-white shadow-[0_4px_15px_rgba(91,141,238,0.4)] -translate-y-[2px]"
+    return activeNav === section ? `${baseClass} ${activeClass}` : baseClass
+  }
+
   return (
-    <nav>
-      <a href='#' onClick={() => handleNavClick('#')} className={activeNav === '#' ? 'active' : ''} ><AiOutlineHome /></a>
-      <a href='#about' onClick={() => handleNavClick('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
-      <a href='#experience' onClick={() => handleNavClick('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook /></a>
-      <a href='#services' onClick={() => handleNavClick('#services')} className={activeNav === '#services' ? 'active' : ''}><RiServiceLine /></a>
-      <a href='#portfolio' onClick={() => handleNavClick('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><VscFolderLibrary /></a>
-      <a href='#testimoniols' onClick={() => handleNavClick('#testimoniols')} className={activeNav === '#testimoniols' ? 'active' : ''}><MdOutlineRateReview /></a>
-      <a href='#contact' onClick={() => handleNavClick('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail /></a>
-      <a href='#footer' onClick={() => handleNavClick('#footer')} className={activeNav === '#footer' ? 'active' : ''}><BsChevronDoubleDown /></a>
+    <nav className="bg-[rgba(10,10,26,0.85)] w-max flex p-1.5 xs:p-2.5 gap-0.5 xs:gap-1.5 z-50 fixed left-1/2 -translate-x-1/2 bottom-5 xs:bottom-8 rounded-[50px] backdrop-blur-xl border border-[rgba(255,255,255,0.08)] shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
+      <a href='#' onClick={() => handleNavClick('#')} className={navLinkClass('#')} title="Home"><AiOutlineHome className="relative z-10" /></a>
+      <a href='#about' onClick={() => handleNavClick('#about')} className={navLinkClass('#about')} title="About"><AiOutlineUser className="relative z-10" /></a>
+      <a href='#experience' onClick={() => handleNavClick('#experience')} className={navLinkClass('#experience')} title="Experience"><BiBook className="relative z-10" /></a>
+      <a href='#services' onClick={() => handleNavClick('#services')} className={navLinkClass('#services')} title="Services"><RiServiceLine className="relative z-10" /></a>
+      <a href='#portfolio' onClick={() => handleNavClick('#portfolio')} className={navLinkClass('#portfolio')} title="Portfolio"><VscFolderLibrary className="relative z-10" /></a>
+      <a href='#highlights' onClick={() => handleNavClick('#highlights')} className={navLinkClass('#highlights')} title="Highlights"><MdOutlineEmojiEvents className="relative z-10" /></a>
+      <a href='#contact' onClick={() => handleNavClick('#contact')} className={navLinkClass('#contact')} title="Contact"><BiMessageSquareDetail className="relative z-10" /></a>
+      <a href='#footer' onClick={() => handleNavClick('#footer')} className={navLinkClass('#footer')} title="Footer"><BsChevronDoubleDown className="relative z-10" /></a>
     </nav>
   )
 }
