@@ -1,6 +1,6 @@
 import React from "react";
 import { BsBriefcaseFill } from "react-icons/bs";
-import { FaGraduationCap, FaCode, FaRocket, FaStar } from "react-icons/fa";
+import { FaGraduationCap, FaCode, FaRocket } from "react-icons/fa";
 
 const milestones = [
   {

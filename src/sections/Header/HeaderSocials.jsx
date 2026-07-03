@@ -1,7 +1,7 @@
 import React from 'react'
 import {BsLinkedin} from 'react-icons/bs'
 import {BsGithub} from 'react-icons/bs'
-import {FiDribbble} from 'react-icons/fi'
+// import {FiDribbble} from 'react-icons/fi'
 
 const HeaderSocials = () => {
   return (
