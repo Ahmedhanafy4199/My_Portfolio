@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Header from './sections/Header/Header'
-import Nav from './components/Nav/Nav'
+import Nav from './components/nav/Nav'
 import About from './sections/About/About'
 import Experience from './sections/Experience/Experience'
 import Services from './sections/Services/Services'
